@@ -260,10 +260,10 @@ span {
         content: 'Web Designer';
     }
     61%, 80% {
-        content: 'Photographer';
+        content: 'Mobile Developer';
     }
     81%, 100% {
-        content: 'Youtuber';
+        content: 'Full-Stack';
     }
 }
 @keyframes typing {
@@ -501,6 +501,19 @@ span {
     left: 50%;
 }
 
+.education .left::before{
+    content: '';
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid var(--main-color);
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent var(--main-color);
+}
+
 .education .right::before{
     content: '';
     height: 0;
@@ -513,3 +526,8 @@ span {
     border-width: 10px 0 10px 10px;
     border-color: transparent transparent transparent var(--main-color);
 }
+
+.education .right::after{
+    left: -16px;
+}
+
